@@ -74,7 +74,7 @@ class _ThemePageState extends State<ThemePage> {
                     children: [
                       Text(
                         'TimelineTheme',
-                        style: Theme.of(context).textTheme.headline6,
+                        style: Theme.of(context).textTheme.headlineMedium,
                       ),
                       _ThemeDropdown(
                         title: 'Direction',
@@ -107,8 +107,7 @@ class _ThemePageState extends State<ThemePage> {
                           Checkbox(
                             value: _theme.nodeItemOverlap,
                             onChanged: (overlap) {
-                              _updateTheme(
-                                  _theme.copyWith(nodeItemOverlap: overlap));
+                              _updateTheme(_theme.copyWith(nodeItemOverlap: overlap));
                             },
                           ),
                         ],
@@ -117,16 +116,14 @@ class _ThemePageState extends State<ThemePage> {
                         title: 'Node Position',
                         value: _theme.nodePosition,
                         onChanged: (nodePosition) {
-                          _updateTheme(
-                              _theme.copyWith(nodePosition: nodePosition));
+                          _updateTheme(_theme.copyWith(nodePosition: nodePosition));
                         },
                       ),
                       _ThemeSlider(
                         title: 'Indicator Position',
                         value: _theme.indicatorPosition,
                         onChanged: (indicatorPosition) {
-                          _updateTheme(_theme.copyWith(
-                              indicatorPosition: indicatorPosition));
+                          _updateTheme(_theme.copyWith(indicatorPosition: indicatorPosition));
                         },
                       ),
                     ],
@@ -140,7 +137,7 @@ class _ThemePageState extends State<ThemePage> {
                     children: [
                       Text(
                         'IndicatorTheme',
-                        style: Theme.of(context).textTheme.headline6,
+                        style: Theme.of(context).textTheme.headlineMedium,
                       ),
                       _ThemeDropdown<Color?>(
                         title: 'Color',
@@ -149,8 +146,7 @@ class _ThemePageState extends State<ThemePage> {
                         onChanged: (color) {
                           _updateTheme(
                             _theme.copyWith(
-                              indicatorTheme:
-                                  _theme.indicatorTheme.copyWith(color: color),
+                              indicatorTheme: _theme.indicatorTheme.copyWith(color: color),
                             ),
                           );
                         },
@@ -162,8 +158,7 @@ class _ThemePageState extends State<ThemePage> {
                         onChanged: (position) {
                           _updateTheme(
                             _theme.copyWith(
-                              indicatorTheme: _theme.indicatorTheme
-                                  .copyWith(position: position),
+                              indicatorTheme: _theme.indicatorTheme.copyWith(position: position),
                             ),
                           );
                         },
@@ -175,8 +170,7 @@ class _ThemePageState extends State<ThemePage> {
                         onChanged: (size) {
                           _updateTheme(
                             _theme.copyWith(
-                              indicatorTheme:
-                                  _theme.indicatorTheme.copyWith(size: size),
+                              indicatorTheme: _theme.indicatorTheme.copyWith(size: size),
                             ),
                           );
                         },
@@ -192,7 +186,7 @@ class _ThemePageState extends State<ThemePage> {
                     children: [
                       Text(
                         'ConnectorTheme',
-                        style: Theme.of(context).textTheme.headline6,
+                        style: Theme.of(context).textTheme.headlineMedium,
                       ),
                       _ThemeDropdown<Color?>(
                         title: 'Color',
@@ -201,8 +195,7 @@ class _ThemePageState extends State<ThemePage> {
                         onChanged: (color) {
                           _updateTheme(
                             _theme.copyWith(
-                              connectorTheme:
-                                  _theme.connectorTheme.copyWith(color: color),
+                              connectorTheme: _theme.connectorTheme.copyWith(color: color),
                             ),
                           );
                         },
@@ -215,8 +208,7 @@ class _ThemePageState extends State<ThemePage> {
                         onChanged: (space) {
                           _updateTheme(
                             _theme.copyWith(
-                              connectorTheme:
-                                  _theme.connectorTheme.copyWith(space: space),
+                              connectorTheme: _theme.connectorTheme.copyWith(space: space),
                             ),
                           );
                         },
@@ -228,8 +220,7 @@ class _ThemePageState extends State<ThemePage> {
                         onChanged: (indent) {
                           _updateTheme(
                             _theme.copyWith(
-                              connectorTheme: _theme.connectorTheme
-                                  .copyWith(indent: indent),
+                              connectorTheme: _theme.connectorTheme.copyWith(indent: indent),
                             ),
                           );
                         },
@@ -241,8 +232,7 @@ class _ThemePageState extends State<ThemePage> {
                         onChanged: (thickness) {
                           _updateTheme(
                             _theme.copyWith(
-                              connectorTheme: _theme.connectorTheme
-                                  .copyWith(thickness: thickness),
+                              connectorTheme: _theme.connectorTheme.copyWith(thickness: thickness),
                             ),
                           );
                         },

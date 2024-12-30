@@ -1,3 +1,8 @@
+## 0.1.1
+
+* Correccion de "hashCode"
+* Migracion a '>=3.1.0 <4.0.0'
+
 ## 0.1.0
 
 * Migrate to null safety(thanks to @areille #33)
